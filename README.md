@@ -17,23 +17,18 @@ Además, genera  una animación 3D que muestra el comportamiento a lo largo de t
 
 💡**Ejemplo 1 - Péndulo Simple** 
 
-#### IMAGEN DEL PENDULO EN SIMULINK
+##### <------------  IMAGEN DEL PENDULO EN SIMULINK   ----------------->
 
 Se pueden generar todos los solidos y restricciones que requiere el mecanismo. En el ejemplo 1 se definio como restricción de movimiento la rotación del objeto, obteniendo el movimiento de pendulo. Tambien se le puede programar gravedad, esta forma no se requiere de una entrada al pendulo.
 
 
-#### IMAGEN DEL PSCOPE DEL ENDULO EN SIMULINK
+##### <------------ IMAGEN DEL SCOPE DEL PENDULO EN SIMULINK  ----------------->
 
 Al analizar la señal resultante se observa que la configuración de simulación influye en la gráfica, por eso se generar picos en los máximos y minimos.
 
 
 
-
-
-
-
-
-
+ODE23t
 
 
 ### Diferencias con el software CAD
@@ -46,7 +41,7 @@ En el software CAD se pueden hacer modelamientos y simulaciones en temas de esfu
 1. La señal sinusoidal observada está influenciada por la configuración del simulador. Para mejorar su calida, es necesario configurar los tiempos de muestreo con los que se generan las soluciones, así como seleccionar el método de integración más adecuado.
 2. La fluidez del movimiento depende de la cantidad de puntos de solución generados. Un mayor número sw puntos permite una representación más continua, evitando la pérdida de información.
 3. Cada algoritmo de integración está optimizado para determinadad condiciones, como la frecuencia de respuesta de la integral o cambios no periódicos en la señal, lo que garantiza una mejor precisión en la simulación.
-
+4. La reducción del tiempo de muestreo permite considerar un mayor número de puntos en los cálculos, lo que incrementa la precisión del análisis, pero también conlleva un mayor consumo de recursos computacionales.
 
 
 
