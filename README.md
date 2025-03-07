@@ -53,7 +53,7 @@ En la Figura 3 se observa que, al ajustar el tiempo de muestreo a 0.001, la señ
 
 Figura 4. Señal resultante Péndulo Simple - Varios Tiempos de Muestreo
 
-
+Al graficar 3 señales con diferntes tiempos de muestreo (0.1, 0.01 y 0.01 respectivamente) se comprueba que el tiempo de muestro afecta la solución matemática de la señal. 
 
 
 ## Interfaz Simscape Multibody
