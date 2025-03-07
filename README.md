@@ -3,10 +3,13 @@
 
 Simscape Multibody es una herramienta de MATLAB/Simulink que permite modelar, simular y analizar sistemas mecánicos multicuerpo, facilitando la representación gráfica y la simuolación de la dinámica y cinemática de cuerpos rígidos con juntas o articulaciones, actuadores y restricciones, haciendolo un programa ideal para aplicaciones de robótica [1]. Permite modelar sistemas mecánicos 3D, como robots, maquinaria pesada, vehículos, etc.
 
-¿Qué ofrece Simscape mUltibody?
+## ¿Qué ofrece Simscape Multibody?
 Simscape se encarga de formular y resolver las ecuaciones diferenciales que modelan el comportamiento dinámico de los sistemas físicos, incluyendo las ecuaciones cimenáticas. Permite observar la respuesta temporal de cada variable durante la simulación, proporcionando una representación detallada del sistema.
 
 Además, genera  una animación 3D que muestra el comportamiento a lo largo de toda la dinámica, permitiendo visualizar la evolución del sistema en cada instante de tiempo.
+
+## ¿Qué diferenicas hay entre Simscape Multibody y los software CAD?
+El software CAD permite realizar modelados y simulaciones para analizar esfuerzos, tipos de materiales y el comportamiento estructural frente a diferentes fuerzas. Sin embargo, este tipo de software no ofrece la posibilidad de observar la dinámica del sistema, es decir, cómo se comporta en términos de movimiento, fuerza y velocidad. No permite graficar curvas que representen la variación de la posición o la velocidad con respecto al tiempo, lo que limita el análisis dinámico del sistema.
 
 
 ### Ventajas
@@ -14,6 +17,7 @@ Además, genera  una animación 3D que muestra el comportamiento a lo largo de t
 2. Facilita la integración de la parte mecánica, el actuador y el controlador dentro del mismo entorno de simulación.
 3. Proporciona herramientas eficaces para el analisis y validación de diseños antes de la implementación física.
 4. Mejora la comprensión del comportamiento dinámico del sistema a través de representaciones gráficas y animaciones.
+
 
 
 💡**Ejemplo 1 - Péndulo Simple** 
@@ -29,20 +33,32 @@ Al analizar la señal resultante se observa que la configuración de simulación
 
 
 
-ODE23t
 
-
-### Diferencias con el software CAD
-En el software CAD se pueden hacer modelamientos y simulaciones en temas de esfuerzo, tipo de material, copmortamiento a nivel estructural respecto a difernetes fuerzas, pero lo que no se puede ver en este tipo de sofwate es la dinamica del sistema, ver a nivel de movimiento que esta ocurriendo en terminos de fuerza, velocidad. No se puede graficar una curva de como varia la posición respecto al tiempo o la velocidad respecto al tiempo.
+## Interfaz Simscape Multibody
 
 
 
 
+![Figura de prueba](Solver_SC.png)
 
-![Figura de prueba](Solver_SC.PNG)
+Figura 3. Solver Configuration
 
-Figura 1. Figura de prueba
+El *Solver Configutation* genera un modelo matemático, las ecuaciones diferenciales, la solución y su respectiva sintonización.
 
+
+
+![Figura de prueba](Frame_SC.png)
+
+Figura 4. World Frame
+
+Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese sistema coordenado.
+
+
+![Figura de prueba](Frame_SC.png)
+
+Figura 5. Mechanism Configuration
+
+Configura el marco de referencia de leyes fisicas, permite configurar fuerzas externas afectando a los solidos y los movimientos. Cabe mencionar que trae la gravedad por defecto en el eje Z, pero se rocomienda cambiarla al eje Y.
 
 
 
