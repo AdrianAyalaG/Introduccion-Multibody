@@ -25,18 +25,20 @@ Además, genera  una animación 3D que muestra el comportamiento a lo largo de t
 4. Mejora la comprensión del comportamiento dinámico del sistema a través de representaciones gráficas y animaciones.
 
 
+# 📚 Ejemplo 1: Péndulo Simple
 
-💡**Ejemplo 1 - Péndulo Simple** 
+![Figura de prueba](Simscape_IMG1.png)
 
-##### <------------  IMAGEN DEL PENDULO EN SIMULINK   ----------------->
+Figura 1. Creación Pendulo Simple
 
 Se pueden generar todos los solidos y restricciones que requiere el mecanismo. En el ejemplo 1 se definio como restricción de movimiento la rotación del objeto, obteniendo el movimiento de pendulo. Tambien se le puede programar gravedad, esta forma no se requiere de una entrada al pendulo.
 
 
-##### <------------ IMAGEN DEL SCOPE DEL PENDULO EN SIMULINK  ----------------->
+![Figura de prueba](Simscape_IMG2.png)
 
-Al analizar la señal resultante se observa que la configuración de simulación influye en la gráfica, por eso se generar picos en los máximos y minimos.
+Figura 2. Señal resultante Pendulo Simple
 
+Al analizar la señal resultante se observa que la configuración de simulación influye en la gráfica, por eso se generar picos en los máximos y minimos. Una forma de corregir esta señal es aumentando el tiempo de muestro en el *Solver de simulación*.
 
 
 
