@@ -39,7 +39,7 @@ En el software CAD se pueden hacer modelamientos y simulaciones en temas de esfu
 
 
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura de prueba](Solver_SC.PNG)
 
 Figura 1. Figura de prueba
 
