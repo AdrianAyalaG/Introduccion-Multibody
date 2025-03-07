@@ -61,7 +61,7 @@ Figura 5. Mechanism Configuration
 
 Configura el marco de referencia de leyes fisicas, permite configurar fuerzas externas afectando a los solidos y los movimientos. Cabe mencionar que trae la gravedad por defecto en el eje Z, pero se rocomienda cambiarla al eje Y.
 
-Por defecto trae ya configurado la aceleración de la gravedad, permitiendo agrevar fuerzas a los 3 ejes dependiendo de lo que se requiere.
+Por defecto trae configurado la aceleración de la gravedad, permitiendo agrevar fuerzas a los 3 ejes dependiendo de lo que se requiere.
 
 
 
