@@ -12,7 +12,9 @@ Además, genera  una animación 3D que muestra el comportamiento a lo largo de t
 
 
 ## ¿Qué diferenicas hay entre Simscape Multibody y los software CAD?
-El software CAD permite realizar modelados y simulaciones para analizar esfuerzos, tipos de materiales y el comportamiento estructural frente a diferentes fuerzas. Sin embargo, este tipo de software no ofrece la posibilidad de observar la dinámica del sistema, es decir, cómo se comporta en términos de movimiento, fuerza y velocidad. No permite graficar curvas que representen la variación de la posición o la velocidad con respecto al tiempo, lo que limita el análisis dinámico del sistema.
+1. El software CAD permite realizar modelados y simulaciones para analizar esfuerzos, tipos de materiales y el comportamiento estructural frente a diferentes fuerzas. Sin embargo, este tipo de software no ofrece la posibilidad de observar la dinámica del sistema, es decir, cómo se comporta en términos de movimiento, fuerza y velocidad. No permite graficar curvas que representen la variación de la posición o la velocidad con respecto al tiempo, lo que limita el análisis dinámico del sistema.
+
+2. Aunque permite realizar operaciones como extrusión, perforación y otras tareas similares, no se recomienda ejecutarlas en el entorno de simulación (Simscape Multibody), ya que este se basa exclusivamente en coordenadas y medidas, lo que puede limitar la precisión y la representación de dichos procesos.
 
 
 
