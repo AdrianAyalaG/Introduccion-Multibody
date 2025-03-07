@@ -36,19 +36,20 @@ Se pueden generar todos los solidos y restricciones que requiere el mecanismo. E
 
 ![Figura de prueba](Simscape_IMG2.png)
 
-Figura 2. Señal resultante Pendulo Simple
+Figura 2. Señal resultante Pendulo Simple - Tiempo de muestro por defecto
 
 Al analizar la señal resultante se observa que la configuración de simulación influye en la gráfica, por eso se generar picos en los máximos y minimos. Una forma de corregir esta señal es aumentando el tiempo de muestro en el *Solver de simulación*.
 
 
 ![Figura de prueba](Simscape_IMG3.png)
 
-Figura 3. Solver Configuration
+Figura 3. Señal resultante Pendulo Simple - Tiempo de muestreo en 0.001
+
+En la Figura 3 se observa que, al ajustar el tiempo de muestreo a 0.001, la señal resultante se aproxima con mayor precisión a una onda sinusoidal. Esto se debe a que un intervalo de muestreo más pequeño permite capturar un mayor número de datos de la solución matemática, mejorando la representación y fidelidad de la señal.
+
+
 
 ## Interfaz Simscape Multibody
-
-
-
 
 ![Figura de prueba](Solver_SC.png)
 
