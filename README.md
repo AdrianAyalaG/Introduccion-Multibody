@@ -43,7 +43,8 @@ Al analizar la señal resultante se observa que la configuración de simulación
 
 Figura 3. Solver Configuration
 
-El *Solver Configutation* genera un modelo matemático, las ecuaciones diferenciales, la solución y su respectiva sintonización.
+La configuración del *Solver* genera un modelo matemático que incluye las ecuaciones diferenciales, su solución y los parámetros para su correspondiente sintonización. 
+El *Solver* usa por defecto todas las configuraciones que estan establecidad en el simulador, como el timepo de muestreo o método de integración. Dando la posibilidad de omitir el transitorio, unicamente viendo el estacionario, el máximo error de tolerancia permitido y escoger un solver diferente. 
 
 
 
@@ -51,7 +52,7 @@ El *Solver Configutation* genera un modelo matemático, las ecuaciones diferenci
 
 Figura 4. World Frame
 
-Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese sistema coordenado.
+Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese sistema coordenado. Este eje de coordenada slo genera por defecto al colocarlo en la simulación.
 
 
 ![Figura de prueba](Frame_SC.png)
@@ -59,6 +60,9 @@ Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese si
 Figura 5. Mechanism Configuration
 
 Configura el marco de referencia de leyes fisicas, permite configurar fuerzas externas afectando a los solidos y los movimientos. Cabe mencionar que trae la gravedad por defecto en el eje Z, pero se rocomienda cambiarla al eje Y.
+
+Por defecto trae ya configurado la aceleración de la gravedad, permitiendo agrevar fuerzas a los 3 ejes dependiendo de lo que se requiere.
+
 
 
 
