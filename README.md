@@ -41,6 +41,9 @@ Figura 2. Señal resultante Pendulo Simple
 Al analizar la señal resultante se observa que la configuración de simulación influye en la gráfica, por eso se generar picos en los máximos y minimos. Una forma de corregir esta señal es aumentando el tiempo de muestro en el *Solver de simulación*.
 
 
+![Figura de prueba](Simscape_IMG3.png)
+
+Figura 3. Solver Configuration
 
 ## Interfaz Simscape Multibody
 
@@ -49,7 +52,7 @@ Al analizar la señal resultante se observa que la configuración de simulación
 
 ![Figura de prueba](Solver_SC.png)
 
-Figura 3. Solver Configuration
+Figura 4. Solver Configuration
 
 La configuración del *Solver* genera un modelo matemático que incluye las ecuaciones diferenciales, su solución y los parámetros para su correspondiente sintonización. 
 El *Solver* usa por defecto todas las configuraciones que estan establecidad en el simulador, como el timepo de muestreo o método de integración. Dando la posibilidad de omitir el transitorio, unicamente viendo el estacionario, el máximo error de tolerancia permitido y escoger un solver diferente. 
@@ -58,14 +61,14 @@ El *Solver* usa por defecto todas las configuraciones que estan establecidad en 
 
 ![Figura de prueba](Frame_SC.png)
 
-Figura 4. World Frame
+Figura 5. World Frame
 
 Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese sistema coordenado. Este eje de coordenada slo genera por defecto al colocarlo en la simulación.
 
 
 ![Figura de prueba](Frame_SC.png)
 
-Figura 5. Mechanism Configuration
+Figura 6. Mechanism Configuration
 
 Configura el marco de referencia de leyes fisicas, permite configurar fuerzas externas afectando a los solidos y los movimientos. Cabe mencionar que trae la gravedad por defecto en el eje Z, pero se rocomienda cambiarla al eje Y.
 
