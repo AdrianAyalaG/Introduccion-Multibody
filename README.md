@@ -29,7 +29,7 @@ Además, genera  una animación 3D que muestra el comportamiento a lo largo de t
 
 ![Figura de prueba](Simscape_IMG1.png)
 
-Figura 1. Creación Pendulo Simple
+Figura 1. Creación Péndulo Simple
 
 Se pueden generar todos los solidos y restricciones que requiere el mecanismo. En el ejemplo 1 se definio como restricción de movimiento la rotación del objeto, obteniendo el movimiento de pendulo. Tambien se le puede programar gravedad, esta forma no se requiere de una entrada al pendulo.
 
@@ -43,9 +43,16 @@ Al analizar la señal resultante se observa que la configuración de simulación
 
 ![Figura de prueba](Simscape_IMG3.png)
 
-Figura 3. Señal resultante Pendulo Simple - Tiempo de muestreo en 0.001
+Figura 3. Señal resultante Péndulo Simple - Tiempo de muestreo en 0.001
 
 En la Figura 3 se observa que, al ajustar el tiempo de muestreo a 0.001, la señal resultante se aproxima con mayor precisión a una onda sinusoidal. Esto se debe a que un intervalo de muestreo más pequeño permite capturar un mayor número de datos de la solución matemática, mejorando la representación y fidelidad de la señal.
+
+
+
+![Figura de prueba](Simscape_IMG4.png)
+
+Figura 4. Señal resultante Péndulo Simple - Varios Tiempos de Muestreo
+
 
 
 
@@ -53,7 +60,7 @@ En la Figura 3 se observa que, al ajustar el tiempo de muestreo a 0.001, la señ
 
 ![Figura de prueba](Solver_SC.png)
 
-Figura 4. Solver Configuration
+Figura 5. Solver Configuration
 
 La configuración del *Solver* genera un modelo matemático que incluye las ecuaciones diferenciales, su solución y los parámetros para su correspondiente sintonización. 
 El *Solver* usa por defecto todas las configuraciones que estan establecidad en el simulador, como el timepo de muestreo o método de integración. Dando la posibilidad de omitir el transitorio, unicamente viendo el estacionario, el máximo error de tolerancia permitido y escoger un solver diferente. 
@@ -62,7 +69,7 @@ El *Solver* usa por defecto todas las configuraciones que estan establecidad en 
 
 ![Figura de prueba](Frame_SC.png)
 
-Figura 5. World Frame
+Figura 6. World Frame
 
 Genera el eje de coordenadas, permite colocar todos los solidos dentro de ese sistema coordenado. Este eje de coordenada slo genera por defecto al colocarlo en la simulación.
 
